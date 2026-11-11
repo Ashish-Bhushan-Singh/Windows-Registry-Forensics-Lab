@@ -1,0 +1,14 @@
+
+# RECmd - USB Forensics
+
+# Examine USBSTOR
+RECmd.exe -f SYSTEM.hiv --kn "ControlSet001\Enum\USBSTOR"
+
+# Examine SanDisk model
+RECmd.exe -f SYSTEM.hiv --kn "ControlSet001\Enum\USBSTOR\Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00"
+
+# Examine first device instance
+RECmd.exe -f SYSTEM.hiv --kn "ControlSet001\Enum\USBSTOR\Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00\03025016032221104412&0"
+
+# Examine second device instance
+RECmd.exe -f SYSTEM.hiv --kn "ControlSet001\Enum\USBSTOR\Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00\4C530000070714121483&0"
